@@ -13,5 +13,5 @@ This was developed on the DietPi Linux distro. The script _install-ping-monitor.
 
 # Customization
 When an internet outage is detected and restored, the service will send a text message.
-This is done by sending an email to phone providers SMS gateway.
+This is done by sending an email to your phone providers SMS gateway.
 To configure this set the five _ALERT*_ variables near the top of the ping-monitor.py script.
