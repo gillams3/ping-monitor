@@ -1,0 +1,14 @@
+[Unit]
+Description=Internet connectivity monitor
+After=network-online.target
+
+[Service] 
+Type=simple
+ExecStart=/usr/bin/python3 -u /usr/local/bin/ping-monitor.py
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
